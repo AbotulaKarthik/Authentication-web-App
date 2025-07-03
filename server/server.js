@@ -31,6 +31,10 @@ app.use(cors({
 
 
 /// api routes -----------
+app.get('/', (req, res) => {
+  res.send('Backend is running ✅');
+});
+
 app.use('/api/auth',authRouter)   ///  url ==> localhost:4000/api/auth/[register,login,logout]
 app.use('/api/user',userRouter)
 
