@@ -11,7 +11,7 @@ const port = process.env.PORT || 4000
 
 connectDb()
 
-const allowedOrigins = ['http://localhost:5173']   // in this array you can add all the frontEnd urls were you can access this backend server
+const allowedOrigins = ['http://localhost:5173','https://mern-auth-backend-g2qd.onrender.com']   // in this array you can add all the frontEnd urls were you can access this backend server
 
 app.use(express.json())
 app.use(cookieParser())
